@@ -76,10 +76,10 @@ frappe.ui.form.Timeline = class Timeline {
 			});
 		});
 
-		this.email_link.on("click", function(e) {
+		/* this.email_link.on("click", function(e) {
 			let text = $(e.currentTarget).find(".copy-to-clipboard").text();
 			frappe.utils.copy_to_clipboard(text);
-		});
+		}); */
 	}
 
 	setup_email_button() {
@@ -116,15 +116,6 @@ frappe.ui.form.Timeline = class Timeline {
 				new frappe.views.CommunicationComposer(args)
 			});
 	}
-
-	/* display_automatic_link_email() {
-		let docinfo = this.frm.get_docinfo();
-
-		if (docinfo.document_email){
-			let link = __("Send an email to {0} to link it here", [`<b><a class="timeline-email-import-link copy-to-clipboard">${docinfo.document_email}</a></b>`]);
-			$('.timeline-email-import').html(link);
-		}
-	} */
 
 	setup_interaction_button() {
 		var me = this;
