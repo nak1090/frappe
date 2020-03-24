@@ -268,7 +268,7 @@ def get_tags(doctype, name):
 	return ",".join(tags)
 
 def get_document_email(doctype, name):
-	email = get_automatic_email_link()
+	email = "khoa.nguyen@mimosatek.com"
 	if not email:
 		return None
 
